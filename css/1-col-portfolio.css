@@ -8,6 +8,23 @@ body {
   padding-top: 54px;
 }
 
+
+
+h1.font_brand {
+  font-variant: small-caps; 
+  font-family: serif;
+}
+
+a.font_brand {
+  font-variant: small-caps; 
+  font-family: serif;
+}
+
+p.font_brand {
+  font-variant: small-caps; 
+  font-family: serif;
+}
+
 @media (min-width: 992px) {
   body {
     padding-top: 56px;
