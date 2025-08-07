@@ -64,18 +64,113 @@
       <!-- Section Dividers -->
       <div id="accordion">
 
+        <!-- Data Modeling Card -->
+        <div class="card">
+          <div class="card-header" id="headingModel">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseModel" aria-expanded="false" aria-controls="collapseModel">
+                <h4 class="mb-0">Data Modeling</h4>
+              </button>
+          </div>
+          <div id="collapseModel" class="collapse" aria-labelledby="headingModel" data-parent="#accordion">
+            <div class="card-body">
+
+              <!-- Project: Customer Churn Propensity Model -->
+              <div class="row">
+                <div class="col-md-7">
+                  <a href="#" target="_blank">
+                    <img class="img-fluid rounded mb-3 mb-md-0" src="images/data_analysis3.jpg" alt="Customer churn modeling visualization">
+                  </a>
+                </div>
+                <div class="col-md-5">
+                  <h3>Customer Churn Propensity Model</h3>
+                  <p>Built a logistic regression and gradient-boosted model to predict churn with feature engineering on tenure, engagement, and support interactions. Delivered calibrated probabilities for lifecycle interventions.</p>
+                  <a class="btn btn-sm btn-secondary" href="#" target="_blank">Case Study</a>
+                  <a class="btn btn-sm btn-secondary" href="#" target="_blank">View GitHub</a>
+                </div>
+              </div>
+              <!-- /.row -->
+              <hr>
+
+              <!-- Project: Demand Forecasting -->
+              <div class="row">
+                <div class="col-md-7">
+                  <a href="#" target="_blank">
+                    <img class="img-fluid rounded mb-3 mb-md-0" src="images/data-analytics-1.jpg" alt="Demand forecasting chart">
+                  </a>
+                </div>
+                <div class="col-md-5">
+                  <h3>Demand Forecasting (Prophet + XGBoost)</h3>
+                  <p>Hybrid time-series model combining Prophet seasonality with gradient-boosted regressors for promotions and price. Achieved weekly MAPE under 8% across 120 SKUs.</p>
+                  <a class="btn btn-sm btn-secondary" href="#" target="_blank">Project Overview</a>
+                  <a class="btn btn-sm btn-secondary" href="#" target="_blank">View GitHub</a>
+                </div>
+              </div>
+              <!-- /.row -->
+
+            </div>
+          </div>
+        </div>
+        <!-- /Data Modeling Card -->
+
+        <!-- Data Pipelining Card -->
+        <div class="card">
+          <div class="card-header" id="headingPipeline">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapsePipeline" aria-expanded="false" aria-controls="collapsePipeline">
+                <h4 class="mb-0">Data Pipelining</h4>
+              </button>
+          </div>
+          <div id="collapsePipeline" class="collapse" aria-labelledby="headingPipeline" data-parent="#accordion">
+            <div class="card-body">
+
+              <!-- Project: Airflow ELT -->
+              <div class="row">
+                <div class="col-md-7">
+                  <a href="#" target="_blank">
+                    <img class="img-fluid rounded mb-3 mb-md-0" src="images/Data-analysis.gif" alt="Airflow DAG animation">
+                  </a>
+                </div>
+                <div class="col-md-5">
+                  <h3>Airflow ELT for Sales Analytics</h3>
+                  <p>Orchestrated daily ELT from REST APIs and S3 into BigQuery with Airflow. Implemented idempotent tasks, data quality checks, and partitioned tables for cost-efficient queries.</p>
+                  <a class="btn btn-sm btn-secondary" href="#" target="_blank">Pipeline Diagram</a>
+                  <a class="btn btn-sm btn-secondary" href="#" target="_blank">View GitHub</a>
+                </div>
+              </div>
+              <!-- /.row -->
+              <hr>
+
+              <!-- Project: dbt Transformations -->
+              <div class="row">
+                <div class="col-md-7">
+                  <a href="#" target="_blank">
+                    <img class="img-fluid rounded mb-3 mb-md-0" src="images/data_analysis2.jpg" alt="dbt transformation layers">
+                  </a>
+                </div>
+                <div class="col-md-5">
+                  <h3>dbt Warehouse Modeling (Bronze → Silver → Gold)</h3>
+                  <p>Designed modular dbt models with tests and documentation to transform raw events into analytics-ready marts on Snowflake. CI validated models on pull requests.</p>
+                  <a class="btn btn-sm btn-secondary" href="#" target="_blank">Model Docs</a>
+                  <a class="btn btn-sm btn-secondary" href="#" target="_blank">View GitHub</a>
+                </div>
+              </div>
+              <!-- /.row -->
+
+            </div>
+          </div>
+        </div>
+        <!-- /Data Pipelining Card  -->
+
         <!-- Data Analytics Card -->
         <div class="card">
-          <div class="card-header id="headingOne">
-              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+          <div class="card-header" id="headingAnalytics">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseAnalytics" aria-expanded="false" aria-controls="collapseAnalytics">
                 <h4 class="mb-0">Data Analytics</h4>
               </button>
           </div>
-          <!-- <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion"> -->
-          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+          <div id="collapseAnalytics" class="collapse" aria-labelledby="headingAnalytics" data-parent="#accordion">
             <div class="card-body">
 
-              <!-- Project 3: Latitude analysis-->
+              <!-- Project: Latitude analysis -->
               <div class="row">
                 <div class="col-md-7">
                   <a href="https://michaelbell1011.github.io/MB_latitude.github.io/index.html" target="_blank">
@@ -93,11 +188,11 @@
               <!-- /.row -->
               <hr>
 
-              <!-- Project 4:  -->
+              <!-- Project: U.S. Obesity Analysis -->
               <div class="row">
                 <div class="col-md-7">
                   <a href="https://michaelbell1011.github.io/d3_js_dynamic_graph/" target="_blank">
-                    <img class="img-fluid rounded mb-3 mb-md-0" src="images/US_obesity_rates.png" alt="">
+                    <img class="img-fluid rounded mb-3 mb-md-0" src="images/US_obesity_rates.png" alt="US obesity rates visualization">
                   </a>
                 </div>
                 <div class="col-md-5">
@@ -109,33 +204,32 @@
                 </div>
               </div>
               <!-- /.row -->
-              <!-- <hr> -->
+
             </div>
           </div>
         </div>
         <!-- /Data Analytics Card -->
 
-        <!-- Web Apps Card -->
+        <!-- Fun Projects Card -->
         <div class="card">
-          <div class="card-header" id="headingTwo">
-              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                <h4 class="mb-0">Web Apps</h4>
+          <div class="card-header" id="headingFun">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFun" aria-expanded="false" aria-controls="collapseFun">
+                <h4 class="mb-0">Fun Projects</h4>
               </button>
           </div>
-          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+          <div id="collapseFun" class="collapse" aria-labelledby="headingFun" data-parent="#accordion">
             <div class="card-body">
 
-              <!-- Project 1: NBA Predictor -->
+              <!-- Project: NBA Predictor -->
               <div class="row">
                 <div class="col-md-7">
-                  <a href="https://nba-predictions-2019.herokuapp.com/" target="_blank">
+                  <a href="#" target="_blank">
                     <img class="img-fluid rounded mb-3 mb-md-0" src="images/basketball.jpg" alt="basketball shot">
                   </a>
                 </div>
                 <div class="col-md-5">
                   <h3>NBA Winner Predictor App</h3>
-                  <p>Using machine learning, this webapp displays the predicted winner of NBA machups during the 2019 regular season.</p>
-                  <!-- <a class="btn btn-sm btn-primary" href="https://nba-predictions-2019.herokuapp.com/" target="_blank">View Project</a> -->
+                  <p>Using machine learning, this webapp displays the predicted winner of NBA matchups during the 2019 regular season.</p>
                   <a class="btn btn-sm btn-secondary" target="_blank">Project Deprecated</a>
                   <a class="btn btn-sm btn-secondary" href="https://github.com/project3team5aus/NBA_predictions_official_deploy" target="_blank">View GitHub</a>
                   <a class="btn btn-sm" href="https://www.vividseats.com/nba-basketball/" target="_blank">Image Source</a>
@@ -144,46 +238,28 @@
               <!-- /.row -->
               <hr>
 
-              <!-- Project 2: School Scout -->
+              <!-- Project: School Scout -->
               <div class="row">
                 <div class="col-md-7">
-                  <a href="https://top-school.herokuapp.com/" target="_blank">
+                  <a href="#" target="_blank">
                     <img class="img-fluid rounded mb-3 mb-md-0" src="images/AISD_Logo_Color_horizontal.jpg" alt="Austin Independent School District logo">
                   </a>
                 </div>
                 <div class="col-md-5">
                   <h3>School Scout App</h3>
-                  <p>
-                    This webapp displays a filterable search of the elementary and middle schools in the greater Ausitn area. 
-                    Additionally, each campus has it's own dashboard of information available from US dept. of Education National Center for Education Statistics, and the Texas Education Agency.
-                  </p>
-                  <!-- <a class="btn btn-sm btn-primary" href="https://top-school.herokuapp.com/" target="_blank">View Project</a> -->
+                  <p>This webapp displays a filterable search of the elementary and middle schools in the greater Austin area, with dashboards using NCES and TEA data.</p>
                   <a class="btn btn-sm btn-secondary" target="_blank">Project Deprecated</a>
                   <a class="btn btn-sm btn-secondary" href="https://github.com/project2group5aus/first_deploy" target="_blank">View GitHub</a>
                   <a class="btn btn-sm" href="https://www.austinisd.org/communications/brand/toolkit-logo-wordmark" target="_blank">Image Source</a>
                 </div>
               </div>
               <!-- /.row -->
-              <!-- <hr> -->
-            </div>
-          </div>
-        </div>
-        <!-- /Web Apps Card  -->
 
-        <!-- Data Modeling Card -->
-        <div class="card">
-          <div class="card-header" id="headingThree">
-              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                <h4 class="mb-0">Data Modeling</h4>
-              </button>
-          </div>
-          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-            <div class="card-body">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
             </div>
           </div>
         </div>
-        <!-- /Data Modeling Card -->
+        <!-- /Fun Projects Card  -->
+
       </div>
       <!-- /Section Dividers -->
       <hr>
